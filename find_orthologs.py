@@ -45,7 +45,6 @@ def get_reciprocal_hits(file_one,file_two, input_sequence_type):
 
         for i,j in zip(a,a1):
             output_list_1.append(i+"\t"+j+"\n")
-        print(len(output_list_1))
 
         with open("tmp/output_file_2") as fh2:
             for line in fh2.readlines():
@@ -56,12 +55,10 @@ def get_reciprocal_hits(file_one,file_two, input_sequence_type):
 
         for i,j in zip(b,b1):
             output_list_2.append(j+"\t"+i+"\n")         #Inversing the list in order to find common things bw output_list_1 and output_list_2
-        print(len(output_list_2))
 
         for x in output_list_1:                         #Checking common hits beween output_list_1 and output_list_2
             if x in output_list_2:
                 output_list.append(x)                   #Contains only reciprocal blast hits
-        print(len(output_list))
 
     elif input_sequence_type == "p":  #For protein(p)
 
