@@ -15,4 +15,4 @@ Example: when you BLAST the complete set of human coding sequences against the c
 `./find_orthologs.py -i1 <Input file 1> -i2 <Input file 2> -o <Output file name> –t <Sequence type – n/p>`
 
 ## Output file:
-A text file comprising the reciprocal BLAST hits of the two species.
+A file comprising the reciprocal BLAST hits of the two species in output format 6. 
